@@ -12,6 +12,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import MusicNoteIcon from "@material-ui/icons/MusicNote";
 
 import HomePanel from "../panel/HomePanel";
+import StyledTab from "../components/StyledTab";
 
 import MemoryIcon from "@material-ui/icons/Memory";
 import SettingsEthernetIcon from "@material-ui/icons/SettingsEthernet";
@@ -76,7 +77,7 @@ export default function TabHeader() {
           aria-label="tab header"
           centered
         >
-          <Tab icon={<HomeIcon fontSize="medium" />} {...a11yProps(0)} />
+          <StyledTab icon={<HomeIcon />} label="Hello" {...a11yProps(0)} />
           <Tab icon={<FavoriteIcon fontSize="medium" />} {...a11yProps(1)} />
           <Tab icon={<MusicNoteIcon fontSize="medium" />} {...a11yProps(2)} />
         </Tabs>
